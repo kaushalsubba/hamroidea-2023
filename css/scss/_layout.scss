@@ -1,0 +1,48 @@
+body{
+    // background:#f2f2f2;
+}
+.wrapper {
+    width:1280px;
+    margin:auto;
+}
+
+
+// Navigation
+header nav {
+    border-bottom: 1px solid #CCCCCC;
+    // border-image: linear-gradient(90deg, rgba(231,231,231,0) 0%, rgba(231,231,231,0) 0%, rgba(231,231,231,0) 0%, rgba(231,231,231,1) 14%, rgba(231,231,231,1) 79%, rgba(231,231,231,0) 100%);
+    .logo {border-right: 1px solid #CCCCCC;}
+    .menu{
+        padding:0 0 0 2rem;
+        ul{
+            display: flex;
+            width:100%;
+            padding:0;
+
+            a{color:#636363;line-height: 75px;padding:0 1rem;font-size: 16px;}
+            a:hover{color:$brand-primary-color;}
+
+            li.highlight { 
+                margin-left: auto;border-left: 1px solid #CCCCCC;
+
+                i{margin-left: 1rem;}
+            }
+        }
+    }
+}
+
+
+// sections
+section{
+
+    &.grey{
+        background-color: $standard-grey-color;
+    }
+
+    .section_intro{
+        color:$brand-primary-color;
+        font-size:24px;
+        font-weight: 400;
+    }
+
+}

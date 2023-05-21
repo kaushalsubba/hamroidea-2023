@@ -1,0 +1,29 @@
+// Hero Section
+section.hero{
+    margin-top:4rem;
+    margin-bottom:4rem;
+    p {color:#636363;margin-bottom:4rem;font-size: 16px;}
+
+    img {
+        clip-path: polygon(14% 0, 100% 0, 100% 100%, 18% 100%, 0% 38%);
+    }
+
+    ul.social{
+        display: flex;
+
+        li a{
+            border:1px solid #CCCCCC;
+            padding: 0.3rem 0.5rem;
+            border-radius: 100%;
+            font-size: 0.8rem;
+            margin-right: 1rem;
+            color:black;
+
+            &:hover {
+                background-color: $brand-primary-color;
+                border-color: $brand-primary-color;
+                color:white;
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+section.with-sticky-cta{
+    position:relative;
+
+    a.sticky_cta{
+        user-select: none;
+        background-color: $brand-primary-color;
+        padding:5% 2.5%;
+        color:white;
+        border-radius: 100%;
+        top:30%;
+        right:42%;
+        transition: transform 330ms ease-in-out;
+    
+        &.make_sticky {
+            position: absolute;
+            z-index: 10;
+        }
+    
+        &:hover{
+            cursor: none;
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+// Stats
+.stats {
+    user-select: none;
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+    li{
+        width:310px;display:flex;font-size:16px;
+
+        span {font-size: 70px;color:$stand-black;}
+    }
+}
+
+
+// Carousel
+.carousel{
+    position: relative;
+    overflow: hidden;
+    
+    p{font-size: 16px;}
+
+}
+
+// Numbered List
+ol {
+    counter-reset: my-counter;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  
+    li {
+      display: inline-block;
+      width: 50%;
+      counter-increment: my-counter;
+      display:flex;
+
+  
+      &::before {
+        content: counter(my-counter);
+        font-size: 40px;
+        color:$brand-primary-color;
+        font-weight: bold;
+        margin-right: 0.5em;
+      }
+    }
+}
+  
+  
